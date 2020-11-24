@@ -23,23 +23,23 @@ class _ApplicationPageState extends State<ApplicationPage>
   final List<BottomNavigationBarItem> _bottomTabs = <BottomNavigationBarItem>[
     BottomNavigationBarItem(
         icon: Icon(IconF.blog),
-        title: Text(GlobalConfig.homeTab),
+        label: GlobalConfig.homeTab,
         backgroundColor: GlobalConfig.colorPrimary),
     BottomNavigationBarItem(
         icon: Icon(IconF.project),
-        title: Text(GlobalConfig.projectTab),
+        label: GlobalConfig.projectTab,
         backgroundColor: GlobalConfig.colorPrimary),
     BottomNavigationBarItem(
         icon: Icon(IconF.wechat),
-        title: Text(GlobalConfig.weChatTab),
+        label: GlobalConfig.weChatTab,
         backgroundColor: GlobalConfig.colorPrimary),
     BottomNavigationBarItem(
         icon: Icon(IconF.tree),
-        title: Text(GlobalConfig.knowledgeSystemsTab),
+        label: GlobalConfig.knowledgeSystemsTab,
         backgroundColor: GlobalConfig.colorPrimary),
     BottomNavigationBarItem(
         icon: Icon(IconF.me),
-        title: Text(GlobalConfig.mineTab),
+        label: GlobalConfig.mineTab,
         backgroundColor: GlobalConfig.colorPrimary),
   ];
 
@@ -47,6 +47,7 @@ class _ApplicationPageState extends State<ApplicationPage>
   void initState() {
     super.initState();
     _pageController = PageController(initialPage: this._page);
+    // _pageController = PageController(length : 4,async:);
   }
 
   @override
